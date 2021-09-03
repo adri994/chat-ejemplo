@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id"
+    content="836729938191-e7glgsbltrrfmrmidt2nspri9fpdauo6.apps.googleusercontent.com">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <title>Google Sigin</title>
+</head>
+
+<body class="container">
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <h1>Google Sigin</h1>
+      <hr>
+      <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </div>
+    <div class="col-sm-6">
+      <form action="">
+        <input type="text" name="correo" class="form-control mb-2" placeholder="correo">
+        <input type="text" name="password" class="form-control mb-2" placeholder="contraseña">
+  
+        <button class="btn btn-primary">
+          Ingresar
+        </button>
+      </form>
+
+    </div>
+  </div>
+
+  <a href="#" onclick="signOut();">Sign out</a>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="./js/auth.js"></script>
+</body>
+
+</html>
